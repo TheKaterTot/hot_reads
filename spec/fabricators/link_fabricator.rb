@@ -1,3 +1,3 @@
 Fabricator(:link) do
-  url "http://google.com"
+  url { sequence(:url) { |i| "http://google#{i}.com" } }
 end

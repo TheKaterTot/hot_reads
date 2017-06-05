@@ -33,6 +33,7 @@ group :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'fabrication'
+  gem 'launchy'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
