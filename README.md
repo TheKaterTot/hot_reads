@@ -1,24 +1,27 @@
-# README
+# Hot Links
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
 
-Things you may want to cover:
+HotLinks can be set up easily.
 
-* Ruby version
+1. Clone done this repo.
+2. Bundle
+3. rake db:setup
+4. To run the test suite, rspec
 
-* System dependencies
+#### Using the app
 
-* Configuration
+HotLinks is a companion app to URLockbox, https://dry-caverns-43653.herokuapp.com/ that allows users to create links and mark them as read or unread.
 
-* Database creation
+#### API
 
-* Database initialization
+GET /api/v1/links
 
-* How to run the test suite
+  [{ "url":"http://doordonot.com" }]
 
-* Services (job queues, cache servers, search engines, etc.)
+  Returns the top 10 links (most popular in the past 24 hours)
 
-* Deployment instructions
+POST /api/v1/links
 
-* ...
+  Request: link: { url: "http://google.com" }
+  Response: 201
