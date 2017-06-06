@@ -11,13 +11,13 @@ HotLinks can be set up easily.
 
 #### Using the app
 
-HotLinks is a companion app to URLockbox, https://dry-caverns-43653.herokuapp.com/ that allows users to create links and mark them as read or unread.
+HotLinks is a companion app to URLockbox, https://dry-caverns-43653.herokuapp.com/, which allows users to create links and mark them as read or unread.
 
 #### API
 
 GET /api/v1/links
 
-  [{ "url":"http://doordonot.com" }]
+  Response: [{ "url":"http://doordonot.com" }]
 
   Returns the top 10 links (most popular in the past 24 hours)
 
